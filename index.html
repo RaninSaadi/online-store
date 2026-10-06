@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store2</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="top-header d-flex align-items-center py-3">
+      <div class="container">
+        <div class="row">
+          <div class=" col-6 col-md-4">
+            <a href=""><img width="60" src="images/logo4 (2).png" alt=""></a>
+          </div>
+          <div class="d-flex col-6 col-md-4 justify-content-center">
+            <input class="form-control" type="text" placeholder="اكتب اسم المنتج لللبحث عنه">
+
+          </div>
+          <div class="col-md-4 left-header d-flex align-items-center justify-content-end py-2 d-none d-lg-flex">
+            <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+              <span>السلة</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+              <span>الدخول</span>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="">
+              <span>المفضلة</span>
+              <i class="fa-regular fa-heart"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">شتلات الورد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category2.html">أشجار الزينة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category3.html">شتلات الخضار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category4.html">صباريات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">بذور</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!--Strat Slider-->
+  <div class="slider mt-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div id="main-slider" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#main-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Slider/Slider 1.png" class="d-block w-100" alt="...">
+
+              </div>
+              <div class="carousel-item">
+                <img src="images/Slider/Slider 2.png" class="d-block w-100" alt="...">
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#main-slider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#main-slider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-2 mt-md-0">
+          <img width="100%" src="images/Slider/Slider 3.png" alt="">
+          <img class="mt-2" width="100%" src="images/Slider/اجعل شرفتك تزهو.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Slider-->
+  <!--Start Categories-->
+  <section class="categories">
+    <h2 class="text-center section-title">كافة التصنيفات</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="images/categories/شتلات الورد.jpg" alt="الورد">
+            </div>
+            <h3 class="mt-2">شتلات الورد</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2  mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden mb-2">
+              <img src="images/categories/التيكوما (1).jpg" alt="">
+            </div>
+            <h3 class="text-center mt-2">أشجار الزينة</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="images/categories/شتلات الخضار.jpg" alt="">
+            </div>
+            <h3 class="text-center mt-2">شتلات الخضار</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="images/categories/بذور فلفل.jpg" alt="">
+            </div>
+            <h3 class="text-center mt-2">بذور</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="images/categories/agave.jpg" alt="">
+            </div>
+            <h3 class="text-center mt-2">صباريات</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="images/categories/nnnnnnnnnnnnnn (1).jpg" alt="">
+            </div>
+            <h3 class="text-center mt-2">نباتات عطرية</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Categories-->
+  <!--Start Products-->
+  <section class="products">
+    <h2 class="text-center section-title">كافة المنتجات</h2>
+    <div class="container-fluid">
+
+
+      <div class="btn-group mb-3 filter-button-group" role="group" aria-label="Basic example">
+        <button data-filter="*" type="button" class="btn btn-success">الكل</button>
+        <button data-filter=".roses" type="button" class="btn btn-success">شتلات الورد</button>
+        <button data-filter=".orn" type="button" class="btn btn-success">أشجار الزينة</button>
+      </div>
+
+
+      <div class="row row-cols-2 row-cols-md-5 all-products ">
+        <div class="col product mb-3 roses">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a data-bs-toggle="modal" href="#roses"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/roses/ورد جوري هولندي.webp" alt="ورد جوري">
+             <div class="product-info">
+               <h3>الورد الجوري</h3>
+               <p>
+                نوع نباتي ينتمي لاى الفصيلة الوردية
+                متلك الورد الجوري أوراقًا عريضة،أمّا سيقانها فغالبًا ما تحتوي على شعيرات صلبة
+                ويعتبر نبات الورد من أقدم مجموعات نباتات الزينة
+               </p>
+             </div>
+             <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 roses">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/roses/شتلات زهور المارجريتا.webp" alt="">
+            <div class="product-info">
+              <h3>شتلات زهور المارغريتا</h3>
+              <p>
+                زهور المارجيرتا
+
+                - الاسم العلمي: Argyranthemum frutescen
+
+                - زهرة المارجريتا وتسمى أيضا زهرة مارجريت وهى نبات معمر ومعروف بأزهار الجميلة العطرة .
+
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 orn">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#cypress" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ornament trees/شتلات من السرو الليموني.jpg" alt="نبتة البفتة">
+            <div class="product-info">
+              <h3>شتلات من السرو الليموني</h3>
+              <p>
+                شتلات سرو ليموني أو عطري
+                الاسم العلمي : Cupressus Macrocarpa
+
+                - يعيش في البيئة شبه المدارية وموطنه كاليفورنيا.
+
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 roses">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#hibiscus" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/roses/هبسكس أصفر.webp" alt="نبات الهيبسكس">
+            <div class="product-info">
+              <h3>هبسكس أصفر</h3>
+              <p>
+                الهبسكس الأصفر
+
+                الاسم العلمي: Hibiscus Rosa Sinensis
+                شجيرة مزهرة دائمة الخضرة يصل ارتفاعها 1.8-3.6
+                يصل ارتفاع بعض الأصناف إلى 5 أمتار..
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 orn">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#rosemary" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ornament trees/شتلات نبات الروزماري.webp" alt="جيرانيوم">
+            <div class="product-info">
+              <h3>شتلات نبات الروزمارى </h3>
+              <p>
+                شتلات نبات الروزمارى
+
+                الاسم العلمى: Rosmarinus officinalis
+
+                - عشبة أو شجيرة عطرية خشبية دائمة الخضرة تنتمى للعائلة الشفوية
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 orn">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#jakranda" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ornament trees/شتلات شجرة الجاكراندا.jpg" alt="جيرانيوم">
+            <div class="product-info">
+              <h3>شجرة الجاكرندا</h3>
+              <p>
+                هي شجرة متساقطة الأوراق أوراقها جذابة مركبة ريشية فردية متقابلة
+                زرع للظل والتزيين في الشوارع وفي الحدائق العامة.
+                تزرع للظل والتزيين في الشوارع
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 orn">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#jakranda" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ornament trees/السرو الايطالي.jpg" alt="السرو الايطالي">
+            <div class="product-info">
+              <h3>السرو الايطالي</h3>
+              <p>
+                هو نوع من الأشجار المخروطية دائمة الخضرة، ينتمي إلى عائلة الصنوبريات
+                ويشتهر بشكله العمودي الأنيق وأوراقه الكثيفة ذات اللون الأخضر الداكن.
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 roses">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#geranium" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/roses/شتلات جيرانيوم.webp" alt="جيرانيوم">
+            <div class="product-info">
+              <h3>شتلات الجيرانيوم</h3>
+              <p>
+                الاسم العلمى : pelargonium
+
+                هي نبتة خارجية معمرة ومزهرة معظم الوقت وهي أحد النباتات المنزلية المفضلة عالميا، وتوجد في كل حديقة لأنها
+                سهلة العناية والإكثار،
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 roses">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#geranium" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ornament trees/فرشاة الزجاج (1).jpg" alt="فرشاة الزجاج">
+            <div class="product-info">
+              <h3>فرشاة الزجاج</h3>
+              <p>
+                هو شجرة أو شجيرة دائمة الخضرة تنتمي إلى عائلة الآسيات
+                موطنها الأصلي الساحل الشرقي لأستراليا
+                وتنتشر زراعتها في المناطق شبه الاستوائية والمعتدلة حول العالم.
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-3 roses">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/roses/شتلات نبتة البفتة.jpg" alt="">
+            <div class="product-info">
+              <h3>شتلات البفتة</h3>
+              <p>
+                شتلات البفتة، المعروفة أيضاً باسم الونكا أو فينكا
+                ي نباتات عشبية معمرة تُستخدم بكثرة في الحدائق المنزلية والعامة لتغطية المساحات الأرضية
+                تتميز بنموهاالسريع وانتشارها الواسع
+              </p>
+            </div>
+            <div class="stars mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>السعر 20$</span>
+              <span>15$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى السلة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Products-->
+  <!--Start Best Selling Products Swipper-->
+  <section class="new-products">
+    <div class="container-fluid">
+      <h2 class="text-center section-title">الأكثر مبيعا"</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card product mb-3 roses overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="images/roses/ورد جوري أبيض.webp" alt="">
+              <div class="product-info">
+                <h3>الورد الجوري</h3>
+                <p>
+                  نبات قائم أو متسلق، يتراوح ارتفاعه بين متر إلى ثلاثة أمتار حسب نوعه وفروعه
+                  زهوره فاتحة اللون ورائحته عطرة،
+                </p>
+              </div>
+              <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>السعر 20$</span>
+                <span>15$</span>
+              </div>
+              <button class="btn btn-success">اضافة الى السلة</button>
+            </div>
+          </div>
+          <div class="swiper-slide product mb-3 roses">
+            <div class="card product mb-3 roses overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="images/vegetables/النعناع.webp" alt="">
+              <div class="product-info">
+                <h3>النعناع </h3>
+                <p>
+                  النعناع هو جنس نباتي من الفصيلة الشفوية يضم حوالي 42 نوعاً معروفاً،
+                  ويتميز برائحة منعشة وطعم لطيف
+                </p>
+              </div>
+              <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>السعر 20$</span>
+                <span>15$</span>
+              </div>
+              <button class="btn btn-success">اضافة الى السلة</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card product mb-3 roses overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="images/ornament trees/السرو الايطالي.jpg" alt="">
+              <div class="product-info">
+                <h3>السرو الايطالي</h3>
+                <p>
+                  تزرع عادة كأشجار زينة في الحدائق، الشوارع، والطرقات.
+                  ستخدم كحواجز طبيعية أو مصدات للرياح.
+                </p>
+              </div>
+              <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>السعر 20$</span>
+                <span>15$</span>
+              </div>
+              <button class="btn btn-success">اضافة الى السلة</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card product mb-3 roses overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="images/categories/شتلات الخضار.jpg" alt="">
+              <div class="product-info">
+                <h3>الليمون الحامض</h3>
+                <p>
+                  ويعتبر من الفواكه الحمضية ذات اللون الأصفر أو الأخضر في بعض الأنواع،
+                  ويتميز بطعمه الحامض
+                  له فوائد صحية عديدة
+                </p>
+              </div>
+              <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>السعر 20$</span>
+                <span>15$</span>
+              </div>
+              <button class="btn btn-success">اضافة الى السلة</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card product mb-3 roses overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="images/vegetables/طماطم.jpg" alt="">
+              <div class="product-info">
+                <h3>شتلات البندورة</h3>
+                <p>
+                  شتلات البندورة تزرع في الحديقة أو الحقل بعد نموها في المشاتل
+                  تُعتبر طريقة الزراعة بالشتلات أكثر نجاحًا من الزراعة بالبذور
+                </p>
+              </div>
+              <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>السعر 20$</span>
+                <span>15$</span>
+              </div>
+              <button class="btn btn-success">اضافة الى السلة</button>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </div>
+  </section>
+  <!--End Best Selling Products Swipper-->
+
+  <!--Start Special Products-->
+  <section class="special-products">
+    <div class="container-fluid pt-5">
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link custom-tab active" aria-current="page" data-bs-toggle="tab" href="#new">وصلنا حديثا"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-tab " data-bs-toggle="tab" href="#seeds">بذور</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-tab" data-bs-toggle="tab" href="#veg">شتلات خضار</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade mt-5 show active" id="new">
+          <div class="row row-cols-2 row-cols-md-5 ">
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/وصلنا حديثا/نبات الهورثيا.jpg" alt="">
+                <div class="product-info">
+                  <h3>نبات حوراء القصر أو الهورثيا</h3>
+                  <p>
+                    لا تحتاج الكثير من العناية 
+                    يمكن وضعها في المنزل أو في بيئات العمل المختلفة
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/وصلنا حديثا/نبات هويا قلب الحب.jpg" alt="">
+                <div class="product-info">
+                  <h3>نبات هويا أو قلب الحب</h3>
+                  <p>
+                  نبتة هويا قلب الحب
+                    نبتة داخلية جميلة لاتحتاج للكثير من العناية 
+                    مناسبة كاهداء
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 orn">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/وصلنا حديثا/نبات فيلودندرون.jpg" alt="">
+                <div class="product-info">
+                  <h3>نبات فيلودندرون أو الأميرة الوردية</h3>
+                  <p>
+                    أضف لمسة من الرقي والنعومة الى مساحتك مع نبتة فيلودندرون الأميرة الوردية
+
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/وصلنا حديثا/كروسولا-صغيرة-768x768.jpg" alt="">
+                <div class="product-info">
+                  <h3>نبات كراسولا صغيرة</h3>
+                  <p>
+                     نبتة من النباتات العصارية
+                     توفر منها أنواع عديدة تختلف من حيث الشكل والحجم واللون
+                     عتبر من النباتات السهلة في العناية
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/وصلنا حديثا/ايفوربيا.jpg" alt="">
+                <div class="product-info">
+                  <h3>نبات الايفوربيا</h3>
+                  <p>
+                    من النباتات العصارية التي لا تحتاج للكثير من العناية
+                    ويحمل على سيقانه الطويلة اشواك واوراق بيضاوية صغيرة
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-success">اضافة الى
+                  السلة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade mt-5" id="seeds">
+          <div class="row row-cols-2 row-cols-md-5">
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/seeds/بذور فلفل.jpg" alt="">
+                <div class="product-info">
+                  <h3>بذور الفلفل</h3>
+                  <p>
+                    يحتوي على ألف بذرة تقريبا"
+                    من مميزاته الانتاجية العالية ومقاومة الأمراض و الآفات 
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/seeds/بذور بندورة.jpg" alt="">
+                <div class="product-info">
+                  <h3>بذور طماطم</h3>
+                  <p>
+                    تتميز بغزارة الإنتاج مع الجودة العالية الثمار.
+                    تتحمل درجات الحرارة المرتفعة والمنخفضة.
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 orn">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/seeds/بذور بندورة شهريار هجين.jpg" alt="">
+                <div class="product-info">
+                  <h3>بذور بندورة شهريار</h3>
+                  <p>
+                    مقاومة الأمراض والآفات
+                    وقت النضج القصير
+                    التكيف مع الظروف المناخية المختلفة.
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 orn">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/seeds/بذورة بندورة نيوتن هجين.jpg" alt="">
+                <div class="product-info">
+                  <h3>بذور بندورة نيوتن</h3>
+                  <p>
+                     تتميز بالجودة و الانتاجية العالية
+                     مقاومة للإصابة بالأمراض.
+                     تتحمل درجات الحرارة العالية .
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+             <div class="col product mb-3 orn">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/seeds/بذور باذنجان.jpg" alt="">
+                <div class="product-info">
+                  <h3>بذور باذنجان</h3>
+                  <p>
+                    يحتوي على ألف بذرة تقريبا"
+                    الانتاجية العالية
+                    النمو السريع ووقت النضج القصير
+                  </p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+             
+          </div>
+        </div>
+        <div class="tab-pane fade mt-5" id="veg">
+          <div class="row row-cols-2 row-cols-md-5 ">
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/pepper mint 2.webp" alt="">
+                <div class="product-info">
+                  <h3>شتلات النعناع</h3>
+                  <p>تتميز برائحة فواحة وخضرة دائمة ومنعشة</p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 15$</span>
+                  <span>10$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 roses">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/lemon (1) - Copy.webp" alt="">
+                <div class="product-info">
+                  <h3>شتلات الليمون</h3>
+                  <p>تتميز بانتاج وفير وثمار حامضة ومثالية</p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 20$</span>
+                  <span>15$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+            <div class="col product mb-3 orn">
+              <div class="card overflow-hidden">
+                <div class="quick-icons">
+                  <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="images/pepper.webp" alt="">
+                <div class="product-info">
+                  <h3>شتلات الفليفلة</h3>
+                  <p>تتميز بشكل رائع ومذاق مميز وجذاب</p>
+                </div>
+                <div class="stars mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>السعر 10$</span>
+                  <span>5$</span>
+                </div>
+                <button class="btn btn-success">اضافة الى السلة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!--End Special Products-->
+  <!--Start Ads Section-->
+  <!--End Ads Section-->
+  <!--Start Footer-->
+  <footer>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col f1 mb-2">
+          <img width="80" src="images/logo4 (2).png" alt="">
+          <p class="text-white">
+            متجرنا يهتم بالجودة والخامة النظيفة ونسعى الى توفير كل جديد وكل ما يرضي عملائنا
+          </p>
+          <ul class="navbar-nav text-white">
+            <li><i class="fa-solid fa-location-dot me-2"></i>تركيا-اسطنبول</li>
+            <li><i class="fa-solid fa-phone me-2"></i>05519665883</li>
+            <li><i class="fa-solid fa-envelope me-2"></i>info@claudsoft.com</li>
+          </ul>
+        </div>
+        <div class="col f2 mb-2">
+          <h3>أهم الروابط</h3>
+          <ul class="navbar-nav text-white">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="">من نحن</a></li>
+            <li><a href="">اتصل بنا</a></li>
+            <li><a href="checkout.html">سياسة الخصوصية</a></li>
+            <li><a href="checkout.html">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div class="col f3 mb-2">
+          <h3>أهم التصنيفات</h3>
+          <ul class="navbar-nav">
+            <li><a href="category.html">شتلات الورد</a></li>
+            <li><a href="">شتلات الخضار</a></li>
+            <li><a href="">صباريات</a></li>
+            <li><a href="category2.html">أشجار الزينة</a></li>
+            <li><a href="">بذور</a></li>
+
+          </ul>
+        </div>
+        <div class="col f4 mb-2">
+          <h3>النشرة البريدية</h3>
+          <p>
+            متجرنا يهتم بالجودة والخامة النظيفة ونسعى الى توفير كل جديد وكل ما يرضي عملائنا
+          </p>
+          <form action="">
+            <input type="text" placeholder="الرجاء ادخال البريد" class="form-control mb-2">
+            <button class="btn btn-success w-100">اشتراك</button>
+          </form>
+        </div>
+
+
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col">
+          <img src="images/payments (3).png" alt="">
+        </div>
+        <div class="col d-flex justify-content-end">
+          <p class="text-white text-center">جميع الحقوق محفوظة &copy; لمشتل الأرض الخضراء</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+  <!--cart-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row row-cols-1 row-mini-cart">
+        <div class="col mini-cart d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/roses/ورد جوري هولندي.webp" alt="ورد جوري">
+          <p>ورد جوري</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn">+</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">-</button>
+          </div>
+
+        </div>
+        <div class="col mini-cart d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/ornament trees/شتلات من السرو الليموني.jpg" alt="السرو الليموني">
+          <p>السرو الليموني</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn">+</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">-</button>
+          </div>
+        </div>
+        <div class="col mini-cart d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/vegetables/النعناع.webp" alt="النعناع">
+          <p>النعناع</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn">+</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">-</button>
+          </div>
+        </div>
+        <div class="col mini-cart d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/roses/شتلات جيرانيوم.webp" alt="الجيرانيوم">
+          <p>الجيرانيوم</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn">+</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <p class="alert alert-danger p-3 text-center">المجموع 250$ فقط لا غير</p>
+      <a href="cart.html"><button class="my-cart w-100">عرض السلة</button></a>
+      <a href="checkout.html"><button class="my-checkout w-100">اتمام الطلب</button></a>
+    </div>
+  </div>
+  </div>
+  <!--cart-->
+  <!--login-->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">تسجيل الدخول</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="mini-login">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">اسم المستخدم أو البريد</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">كلمة السر</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">تذكر بياناتي</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 login">تسجيل الدخول</button>
+        </form>
+      </div>
+
+      <div class="alert alert-danger my-3 text-center">
+        <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+
+      </div>
+      <hr>
+
+      <div class="text-center mt-5">
+        <i class="fa-regular fa-user fa-3x"></i>
+        <p>لايوجد لديك حساب؟؟</p>
+        <a href="" class="btn btn-danger w-100 text-white account">انشاء حساب</a>
+      </div>
+
+    </div>
+  </div>
+  <!--login-->
+  <!--Quick View-->
+  <div class="modal fade" id="quick-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">زهور المارجريتا</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid" src="images/roses/شتلات زهور المارجريتا.webp" alt="">
+              <a href="product.html"><button class="btn btn-success w-100 mt-3">كافة التفاصيل</button></a>
+            </div>
+            <div class="col">
+              <h1 class="modal-title fs-5">زهور المارجريتا</h1>
+              <p class="product-desc">
+                وطنها الأصلي جزر الكناري، وتُزرع على نطاق واسع كنباتات زينة في الحدائق والمتنزهات بسبب جمال أزهارها
+                ورائحتها العطرة.
+              </p>
+              <div class="quick-reviews">
+                <span>تقييمات المستخدمين:</span>
+                <div class="stars mb-2 d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                </div>
+
+              </div>
+              <div class="price mb-2">
+                <span>السعر 30$:</span>
+                <span>20$</span>
+
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn">+</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">-</button>
+                </div>
+                <div>
+                  <button class="btn btn-success">اضافة الى السلة</button>
+                  <button class="btn btn-warning">شراء الآن</button>
+                </div>
+              </div>
+              <hr>
+              <div class="category">
+                <span>التصنيفات:</span>
+                <a href="category.html">شتلات الورد</a>
+              </div>
+              <div class="share">
+                <span>المشاركة:</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Quick View-->
+
+  <!--Quick View-->
+  <div class="modal fade" id="roses" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">الورد الجوري </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid" src="images/roses/ورد جوري هولندي.webp" alt="">
+              <a href="product.html"><button class="btn btn-success w-100 mt-3">كافة التفاصيل</button></a>
+            </div>
+            <div class="col">
+              <h1 class="modal-title fs-5">ورد جوري هولندي</h1>
+              <p class="product-desc">
+                ويعتبر نبات الورد من أقدم مجموعات نباتات الزينة ويستخرج منه زيت عطري شهير وهو زيت الورد الذي يدخل في
+                صناعة العطور
+              </p>
+              <div class="quick-reviews">
+                <span>تقييمات المستخدمين:</span>
+                <div class="stars mb-2 d-inline-flex gap-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                </div>
+
+              </div>
+              <div class="price mb-2">
+                <span>السعر 30$:</span>
+                <span>20$</span>
+
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn">+</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">-</button>
+                </div>
+                <div>
+                  <button class="btn btn-success">اضافة الى السلة</button>
+                  <button class="btn btn-warning">شراء الآن</button>
+                </div>
+              </div>
+              <hr>
+              <div class="category mb-2">
+                <span>التصنيفات:</span>
+                <a href="category.html">شتلات الورد</a>
+              </div>
+              <div class="share">
+                <span>المشاركة:</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Quick View-->
+
+  <!--Quick View-->
+  <div class="modal fade" id="hibiscus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 my-3" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid" src="images/ornament trees/شتلات من السرو الليموني.jpg" alt="">
+              <button class="btn btn-success w-100 mt-3">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <h1 class="modal-title fs-5">هيبسكس أصفر</h1>
+              <p class="product-desc">
+                نبات الهيبسكس (Hibiscus) هو نبات ينتمي إلى عائلة الخبازيات
+                موطنه الأصلي مناطق جنوب شرق آسيا مثل الصين واليابان، وكذلك شرق أفريقي
+                تميز النبات بأنه مستديم الخضرة وله نمو سريع، حيث يمكن أن يصل ارتفاع بعض أنواعه إلى 5 أمتار، وهو قابل
+                للتقليم والتشكيل ويزهر طوال العام.
+              </p>
+              <div class="quick-reviews gap-2">
+                <span>تقييمات المستخدمين:</span>
+                <div class="stars mb-2 d-inline-flex gap-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                </div>
+
+              </div>
+              <div class="price mb-2">
+                <span>السعر 30$:</span>
+                <span>20$</span>
+
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn">+</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">-</button>
+                </div>
+                <div>
+                  <button class="btn btn-success">اضافة الى السلة</button>
+                  <button class="btn btn-warning">شراء الآن</button>
+                </div>
+              </div>
+              <hr>
+              <div class="category">
+                <span>التصنيفات:</span>
+                <a href="category.html">شتلات الورد</a>
+              </div>
+              <div class="share">
+                <span>المشاركة:</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Quick View-->
+
+  <!--Quick View-->
+  <div class="modal fade" id="cypress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid" src="images/ornament trees/شتلات من السرو الليموني.jpg" alt="">
+              <button class="btn btn-success w-100 mt-3">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <h1 class="modal-title fs-5">السرو الليموني</h1>
+              <p class="product-desc">
+                هو نوع من أشجار الصنوبريات ينتمي إلى الفصيلة السروية
+                ويشتهر برائحته القوية التي تشبه الليمون والتي تنبعث عند هز أو سحق أوراقه
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين:</span>
+                <div class="stars mb-2 d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                </div>
+
+              </div>
+              <div class="price mb-3">
+                <span>السعر 30$:</span>
+                <span>20$</span>
+
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn">+</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">-</button>
+                </div>
+                <div>
+                  <button class="btn btn-success">اضافة الى السلة</button>
+                  <button class="btn btn-warning">شراء الآن</button>
+                </div>
+              </div>
+              <hr>
+              <div class="category mb-3">
+                <span>التصنيفات:</span>
+                <a href="category.html">أشجار الزينة</a>
+              </div>
+              <div class="share">
+                <span>المشاركة:</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Quick View-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>

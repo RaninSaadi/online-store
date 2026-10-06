@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store | Checkout</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="top-header d-flex align-items-center py-3">
+      <div class="container">
+        <div class="row">
+          <div class=" col-6 col-md-4">
+            <a href=""><img width="60" src="images/logo4 (2).png" alt=""></a>
+          </div>
+          <div class="d-flex col-6 col-md-4 justify-content-center">
+            <input class="form-control" type="text" placeholder="اكتب اسم المنتج لللبحث عنه">
+
+          </div>
+          <div class="col-md-4 left-header d-flex align-items-center justify-content-end py-2 d-none d-lg-flex">
+            <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+              <span>السلة</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+              <span>الدخول</span>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="">
+              <span>المفضلة</span>
+              <i class="fa-regular fa-heart"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">شتلات الورد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category2.html">أشجار الزينة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category3.html">شتلات الخضار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category4.html">صباريات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">بذور</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!--Start Banner-->
+  <section class="banner">
+    <h1 class="category-title">اتمام الطلب</h1>
+  </section>
+  <!--End Banner-->
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="user-info">
+            <h4 class="cart-product-title my-3">معلومات الشحن</h4>
+            <div>
+              <label for="" class="form-label">الاسم:</label>
+              <input type="text" class="form-control" placeholder="الرجاء ادخال الاسم">
+            </div>
+            <div class="mt-3">
+              <label for="" class="form-label">البريد الالكتروني:</label>
+              <input type="email" class="form-control" placeholder="الرجاء ادخال البريد الالكتروني">
+            </div>
+            <div class="mt-3">
+              <label for="" class="form-label">رقم الهاتف:</label>
+              <input type="tel" id="phone" class="form-control" placeholder="الرجاء ادخال رقم الهاتف">
+            </div>
+            <div class="mt-3">
+              <label for="" class="form-label">اسم البلد</label>
+              <select class="form-select">
+                <option selected disabled>الرجاء اختيار الدولة:</option>
+                <option value="syria">سوريا</option>
+                <option value="turkey">تركيا</option>
+                <option value="egypt">مصر</option>
+                <option value="jordan">الأردن</option>
+              </select>
+
+            </div>
+
+            <div class="mt-3">
+              <label for="" class="form-label">اسم المدينة:</label>
+              <select class="form-select">
+                <option selected disabled>الرجاء اختيار المدينة:</option>
+                <option value="syria">سوريا</option>
+                <option value="turkey">تركيا</option>
+                <option value="egypt">مصر</option>
+                <option value="jordan">الأردن</option>
+              </select>
+
+            </div>
+            <div class="mt-3">
+              <label for="" class="form-label">ملاحظات حول الشحن:</label>
+              <textarea name="" id="" class="form-control" row="5">
+
+                  </textarea>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row row-cols-1 row-mini-cart">
+
+
+
+            <div class="col mini-cart d-flex justify-content-between align-items-center">
+
+              <div class="cart-product-title">
+                المنتج
+
+              </div>
+
+              <p class="cart-product-title">السعر</p>
+
+              <div class="cart-product-title">
+                الكمية
+              </div>
+
+              <p class="cart-product-title">الاجمالي</p>
+            </div>
+
+
+            <div class="col mini-cart d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column flex-md-row gap-2 align-items-center">
+                <img class="img-fluid" width="60px" src="images/categories/pink rose.png" alt="">
+                <p>الورد الجوري</p>
+
+              </div>
+
+              <p>250$</p>
+
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn">+</button>
+                <button type="button" class="btn">1</button>
+                <button type="button" class="btn">-</button>
+              </div>
+
+              <p>500$</p>
+
+            </div>
+
+            <div class="col mini-cart d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column flex-md-row gap-2 align-items-center">
+                <img class="img-fluid" width="60px" src="images/categories/pink rose.png" alt="">
+                <p>الورد الجوري</p>
+
+              </div>
+
+              <p>250$</p>
+
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn">+</button>
+                <button type="button" class="btn">1</button>
+                <button type="button" class="btn">-</button>
+              </div>
+
+              <p>500$</p>
+
+            </div>
+
+            <div class="col mini-cart d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column flex-md-row gap-2 align-items-center">
+                <img class="img-fluid" width="60px" src="images/categories/pink rose.png" alt="">
+                <p>الورد الجوري</p>
+
+              </div>
+
+              <p>250$</p>
+
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn">+</button>
+                <button type="button" class="btn">1</button>
+                <button type="button" class="btn">-</button>
+              </div>
+
+              <p>500$</p>
+
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="code d-flex mt-5 gap-3">
+              <input type="text" class="form-control w-50">
+              <button class="btn btn-success">تطبيق الكوبون</button>
+            </div>
+            <div class="d-flex mt-5 total-price">
+              الاجمالي:2500$
+            </div>
+
+          </div>
+          <div class="payments mt-5">
+            <div class="">
+              <input type="radio" name="payments">
+              <label for="" class="form-label">الدفع باستخدام البيبال</label>
+            </div>
+            <div class="">
+              <input type="radio" name="payments">
+              <label for="" class="form-label">الدفع باستخدام الفيزا كارد</label>
+            </div>
+            <div class="">
+              <input type="radio" name="payments">
+              <label for="" class="form-label">الدفع عن طريق حوالة بنكية مباشرة</label>
+            </div>
+
+          </div>
+          <div class="master-card mt-3">
+            <h class="cart-product-title">يمكنكم الدفع بشكل آمن عن طريق الفيزا كارد</h4>
+              <div class="position-relative">
+                <label for="" class="form-label">رقم البطاقة:</label>
+                <input type="text" class="form-control">
+                <img class="position-absolute" src="images/payments (3).png" alt="">
+              </div>
+              <div class="d-flex mt-3 gap-3">
+                <div class="w-100">
+                  <label for="">تاريخ الانتهاء:</label>
+                  <input type="text" class="form-control" placeholder="سنة/شهر">
+                </div>
+                <div class="w-100">
+                  <label for="">رمز الأمان:</label>
+                  <input type="text" class="form-control" placeholder="CVC">
+                </div>
+              </div>
+          </div>
+          <button class="btn btn-warning w-100 mt-3">اتمام الطلب</button>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Start Footer-->
+  <footer>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col f1 mb-2">
+          <img width="80" src="images/logo4 (2).png" alt="">
+          <p class="text-white">
+            متجرنا يهتم بالجودة والخامة النظيفة ونسعى الى توفير كل جديد وكل ما يرضي عملائنا
+          </p>
+          <ul class="navbar-nav text-white">
+            <li><i class="fa-solid fa-location-dot me-2"></i>تركيا-اسطنبول</li>
+            <li><i class="fa-solid fa-phone me-2"></i>05519665883</li>
+            <li><i class="fa-solid fa-envelope me-2"></i>info@claudsoft.com</li>
+          </ul>
+        </div>
+        <div class="col f2 mb-2">
+          <h3>أهم الروابط</h3>
+          <ul class="navbar-nav text-white">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="">من نحن</a></li>
+            <li><a href="">اتصل بنا</a></li>
+            <li><a href="">سياسة الخصوصية</a></li>
+            <li><a href="">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div class="col f3 mb-2">
+          <h3>أهم التصنيفات</h3>
+          <ul class="navbar-nav">
+            <li><a href="c">شتلات الورد</a></li>
+            <li><a href="">شتلات الخضار</a></li>
+            <li><a href="">صباريات</a></li>
+            <li><a href="category2.html">أشجار الزينة</a></li>
+            <li><a href="">بذور</a></li>
+
+          </ul>
+        </div>
+        <div class="col f4 mb-2">
+          <h3>النشرة البريدية</h3>
+          <p>
+            متجرنا يهتم بالجودة والخامة النظيفة ونسعى الى توفير كل جديد وكل ما يرضي عملائنا
+          </p>
+          <form action="">
+            <input type="text" placeholder="الرجاء ادخال البريد" class="form-control mb-2">
+            <button class="btn btn-success w-100">اشتراك</button>
+          </form>
+        </div>
+
+
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col">
+          <img src="images/payments (3).png" alt="">
+        </div>
+        <div class="col d-flex justify-content-end">
+          <p class="text-white text-center">جميع الحقوق محفوظة &copy; لمشتل الأرض الخضراء</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+  <!--cart-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="row row-mini-cart">
+
+        <div class="col mini-cart d-flex justify-content-between align-items-center">
+          <img class="img-fluid" src="images/categories/pink rose.png" alt="">
+          <p>الورد الجوري</p>
+          <div class="btn-group btns-quantity-mini">
+            <button type="button" class="btn">+</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">-</button>
+          </div>
+
+          <div class="col mini-cart d-flex justify-content-between align-items-center">
+            <img class="img-fluid" src="images/categories/pink rose.png" alt="">
+            <p>الورد الجوري</p>
+            <div class="btn-group btns-quantity-mini">
+              <button type="button" class="btn">+</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">-</button>
+            </div>
+
+            <div class="col mini-cart d-flex justify-content-between align-items-center">
+              <img class="img-fluid" src="images/categories/pink rose.png" alt="">
+              <p>الورد الجوري</p>
+              <div class="btn-group btns-quantity-mini">
+                <button type="button" class="btn">+</button>
+                <button type="button" class="btn">1</button>
+                <button type="button" class="btn">-</button>
+              </div>
+
+              <div class="col mini-cart d-flex justify-content-between align-items-center">
+                <img class="img-fluid" src="images/categories/pink rose.png" alt="">
+                <p>الورد الجوري</p>
+                <div class="btn-group btns-quantity-mini">
+                  <button type="button" class="btn">+</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">-</button>
+                </div>
+
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <p class="alert alert-success p-3 my-3 text-center">مجموع المنتجات 250$ فقط لاغير</p>
+              <button class="btn btn-success w-100">عرض السلة</button>
+              <button class="btn btn-danger w-100">اتمام الطلب</button>
+            </div>
+          </div>
+        </div>
+        <!--cart-->
+
+        <!--login-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+              lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--login-->
+        <!--Quick View-->
+        <div class="modal fade" id="quick-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Quick View-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+          integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+</body>
